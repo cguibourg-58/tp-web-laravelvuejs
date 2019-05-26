@@ -1,0 +1,19 @@
+ip: 192.168.10.10
+memory: 2048
+cpus: 1
+provider: virtualbox
+authorize: C:\Users\clem\Documents\Cours\projet-php\keys\id_rsa.pub
+keys:
+    - C:\Users\clem\Documents\Cours\projet-php\keys\id_rsa
+folders:
+    -
+        map: 'C:\Users\clem\Documents\Cours\projet-php\tp-web-laravelvuejs'
+        to: /home/vagrant/code
+sites:
+    -
+        map: homestead.test
+        to: /home/vagrant/code/public
+databases:
+    - homestead
+name: tp-web-laravelvuejs
+hostname: tp-web-laravelvuejs
